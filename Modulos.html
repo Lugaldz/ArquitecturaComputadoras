@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<!--pagina html "Inicio" del proyecto ArquitecturaCompus
+Autor: Luis Gerardo Subealdea Hernandez-->
+<head>
+	<title>Modulos</title>
+	<link rel ="stylesheet" type="text/css" href = "Style.css">
+	<link rel="shortcut icon" href="icon.png">
+</head>
+<body class=general>
+
+	<!--Div general de la pagina-->
+	<div class="central">
+		<!--Barra de enlaces-->
+		<div class="barraEnlaces">
+			<!--Seccion del titulo-->
+			<div class=tituloPag>
+				<font class="tituloPag">Arquitectura de Computadoras</font>
+			</div>
+			<!--Seccion de botones-->
+			<div class=barraEnlaces>
+			<div class=botonesNav>
+				<nav>
+				<ul class=nav>	
+				<li>
+				<a class="botonElementos" href="index.html">Unidad 1</a>
+						<ul>
+							<li>
+								<a class="botonElementos" href="index.html">Inicio</a>
+							</li>
+							<li>						
+								<a class="botonElementos" href="Arquitecturas.html">Arquitecturas</a>
+							</li>
+							<li>	
+								<a class="botonElementos" href="Componentes.html">Componentes</a>
+								
+									<ul>
+										<li>
+											<a class="bottonintern" href="Procesadores.html">Procesadores</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Alu.html">Alu</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Buses.html">Buses</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="UC.html">Unidad de Control</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Memorias.html">Memorias</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Modulos.html">Modulos E/S</a>
+										</li>
+									</ul>
+								
+							</li>
+							<li>	
+								<a class="botonElementos" href="Gamas.html">Gamas</a>
+							</li>	
+							<li>
+								<a class="botonElementos" href="Videos.html">Trabajos y Recursos</a>
+							</li>
+						</ul>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad2.html">Unidad 2</a>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad3.html">Unidad 3</a>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad4.html">Unidad 4</a>
+						</li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+		<!--Parte del cuerpo-->
+		<div class="cuerpo">
+		
+			<p class="titulos">Modulos de entrada y salida</p>
+			<p class="texto">
+				Las computadoras disponen de los módulos de entrada/salida para poder efectuar operaciones entre el procesador y un periférico.<br><br> 
+Los módulos son interfaces y se utilizan para facilitar las operaciones de entrada y salida entre los periféricos y la memoria o procesador. <br><br>
+
+Estos módulos se conectan con el procesador y la memoria principal, y cada uno controla uno o mas dispositivos externos
+
+			
+			</p>
+			<p class="subtitulos">Entrada/Salida programada</p>
+			<p class="texto">
+				Para hacer la operación solicitada, el procesador ejecuta un programa que controla la operación de entrada o salida.<br><br>
+Sincronización:<br><br>
+El programa ejecutado revisa el estado del periférico de manera constante, así se sabe si está preparado para comenzar.
+Mientras se hace el proceso de sincronización, el procesador se dedica solamente a esta tarea y no puede realizar otros procesos.<br><br>
+
+Intercambio de dato:<br><br>
+En este proceso si la operación es de entrada, el procesador lee el registro de datos del modulo y lo guarda en memoria; en cambio si es de salida, el procesador toma de la memoria el dato que se enviará al periférico y lo escribe en el registro de datos del modulo. 
+
+			</p>
+			
+			<p class="subtitulos">Entrada/Salida mediante interrupciones</p>
+			<p class="texto">
+			El programa genera una orden de entrada o salida 
+Y se ejecuta hasta que el hardware lo interrumpe para indicar que la operación terminó.<br><br>
+
+La entrada y salida con interrupciones es más eficiente que la programada pero requiere la intervención activa del procesador para transferir los datos entre la memoria y el modulo.<br><br>
+
+Este método pretende evitar que el procesador se pare o tenga que hacer trabajo improductivo mientras espera a que el periférico esté listo para la operación, así se aprovecha el tiempo para ejecutar otros programas
+
+			</p>
+			
+			<p class="subtitulos">ntrada/Salida directa a memoria</p>
+			<p class="texto">
+			Un procesador toma el control de la operación para la transferencia de datos
+El modulo DMA es capaz de imitar al procesador y de transferir datos desde memoria a través del bus del sistema. <br>
+El modulo solo utiliza el bus cuando el procesador no lo necesita. <br><br>
+
+Esta técnica es eficiente para transferir bloques enteros de datos. <br>
+El procesador programa la transferencia y encarga a un nuevo elemento conectado al bus del sistema hacer toda la transferencia<br>
+Al acabar, el elemento avisa al procesador y  este usa el tiempo que dura la transferencia para hacer otras tareas. <br>
+Con esta técnica el procesador no tiene que llevar a cabo toda la sincronización e intercambio de datos.
+			</p>
+			
+			<p class="subtitulos">Canales y procesadores de Entrada/Salida</p>
+			<p class="texto">
+				El canal de entrada y salida es una ampliación del concepto de DMA. Este canal puede ejecutar instrucciones de entrada y salida, por lo que puede controlar las operaciones pertinentes. <br><br>
+
+Un canal selector controla varios dispositivos de alta velocidad y se dedica a transferir datos a uno de ellos. Es decir el canal de E/S selecciona un dispositivo y hace la transferencia. <br><br>
+
+Un canal multiplexor puede manejar la entrada y salida de varios dispositivos al mismo tiempo. Para dispositivos lentos, un multiplexor de byte acepta o transmite caracteres tan rápido como es posible a varios dispositivos
+
+			
+			</p>
+		</div>
+	</div>
+</body>

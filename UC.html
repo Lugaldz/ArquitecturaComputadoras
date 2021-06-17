@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<!--pagina html "Inicio" del proyecto ArquitecturaCompus
+Autor: Luis Gerardo Subealdea Hernandez-->
+<head>
+	<title>Unidad de control</title>
+	<link rel ="stylesheet" type="text/css" href = "Style.css">
+	<link rel="shortcut icon" href="icon.png">
+</head>
+<body class=general>
+
+	<!--Div general de la pagina-->
+	<div class="central">
+		<!--Barra de enlaces-->
+		<div class="barraEnlaces">
+			<!--Seccion del titulo-->
+			<div class=tituloPag>
+				<font class="tituloPag">Arquitectura de Computadoras</font>
+			</div>
+			<!--Seccion de botones-->
+			<div class=barraEnlaces>
+			<div class=botonesNav>
+				<nav>
+				<ul class=nav>	
+				<li>
+				<a class="botonElementos" href="index.html">Unidad 1</a>
+						<ul>
+							<li>
+								<a class="botonElementos" href="index.html">Inicio</a>
+							</li>
+							<li>						
+								<a class="botonElementos" href="Arquitecturas.html">Arquitecturas</a>
+							</li>
+							<li>	
+								<a class="botonElementos" href="Componentes.html">Componentes</a>
+								
+									<ul>
+										<li>
+											<a class="bottonintern" href="Procesadores.html">Procesadores</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Alu.html">Alu</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Buses.html">Buses</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="UC.html">Unidad de Control</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Memorias.html">Memorias</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Modulos.html">Modulos E/S</a>
+										</li>
+									</ul>
+								
+							</li>
+							<li>	
+								<a class="botonElementos" href="Gamas.html">Gamas</a>
+							</li>	
+							<li>
+								<a class="botonElementos" href="Videos.html">Trabajos y Recursos</a>
+							</li>
+						</ul>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad2.html">Unidad 2</a>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad3.html">Unidad 3</a>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad4.html">Unidad 4</a>
+						</li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+		<!--Parte del cuerpo-->
+		<div class="cuerpo">
+		
+			<p class="titulos">Unidad de control</p>
+			<p class="texto">
+			
+			
+			</p>
+			<p class="subtitulos">Componentes</p>
+			<p class="subtitulos" style="font-size:1.1rem">Unidad integrada</p>
+			<p class="texto">
+			La unidad de control está conformada por compuertas lógicas, flip-flops, circuitos digitales, codificadores y decodificadores, que se hallan cableados de una manera ya fundada. <br><br>
+Se puede tener en cuenta como un artefacto de estados, que cambia de un estado a otro en cada periodo de reloj, dependiendo del contenido del registro de normas y las entradas externas. <br><br>
+La salida de este artefacto de estados son las señales de control. La sucesión de las operaciones llevadas a cabo por esta máquina está definida por el cableado de los recursos lógicos. Por esta razón se llama “integrada”. <br><br>
+El diseño está con base en una arquitectura específica. Una vez que se requieran cambios en el grupo de normas, se tienen que hacer cambios en el cableado y el circuito. 
+
+			
+			</p>
+			<p class="subtitulos"  style="font-size:1.1rem">Señales de control</p>
+			<p class="texto">
+			
+			Las señales de control son primordiales para guiar la ejecución de las operaciones. Son difundidas por circuitos lógicos expresamente diseñados, en los cuales no se puede cambiar el procedimiento de generación de las señales sin un cambio físico de la composición del circuito. <br><br>
+Las señales de control para hacer una operación tienen que difundirse no en un exclusivo punto en la era, sino a lo largo de todo el lapso de tiempo que corresponde al periodo de ejecución de la instrucción. <br><br>
+El código de operación de una instrucción incluye la información elemental para dar a conocer la señal de control. 
+
+			</p>
+			<p class="subtitulos" style="font-size:1.1rem">Decodificador de instrucciones</p>
+			<p class="texto">
+			El código de operación se decodifica en el decodificador de normas. Este está construido por un grupo de decodificadores que decodifican los diferentes campos del código de operación de la instrucción. <br><br>
+
+ El decodificador de normas consiente que la unidad de control ingrese al primer estado vinculado con la ejecución de la nueva operación, el cual rígida tanto tiempo como permanezcan sin alterarse las señales de temporización y otras señales de acceso. <br><br>
+
+ Un cambio de cualquier persona de las señales mencionadas incita que cambie el estado de la unidad de control. <br><br>
+
+ Como consecuencia, varias líneas que salen del decodificador de normas adquieren valores en la señal. Estas líneas se hallan acopladas al dispositivo generador de señales de control para las distintas unidades del computador. <br><br>
+Repitiendo la organización de estas etapas es que se composición en la unidad de control el ordenamiento apropiado de estados internos. <br><br>
+
+ Una vez que llega una totalmente nueva instrucción a la unidad de control, las unidades integradas se hallan en el estado inicial para recobrar la nueva instrucción. 
+
+			
+			</p>
+			<p class="subtitulos" style="font-size:1.1rem">Unidad microprogramada</p>
+			<p class="texto">
+			La diferencia importante de este enfoque con en relación a la unidad incorporada es la vida de un almacén de control, que se usa para guardar los microprogramas que integran las señales de control codificadas imprescindibles para la ejecución de una operación. <br><br>
+
+ No se va a decodificar el código de operación de la instrucción para generar luego una señal de control, sino que se indicará la dirección de un microprograma que está guardado en el almacén de control. <br><br>
+
+ O sea, las señales de control adjuntadas con las indicaciones permanecen almacenadas en celdas especiales de memoria como microprogramas reemplazables. <br><br>
+
+ La unidad de control microprogramada es más lenta que la unidad incorporada debido al tiempo que tarda restablecer las operaciones que se hallan en la unidad de memoria.
+
+			
+			</p>
+			<p class="subtitulos">Funciones</p>
+			<p class="texto">
+			Es responsabilidad de la unidad de control informar a los dispositivos de acceso y salida, a la memoria primaria y a la unidad lógico-aritmética del computador cómo argumentar a las operaciones que son emitidas al procesador. <br><br>
+
+ Consigue en la memoria las operaciones de los programas y las lleva al registro del procesador. En funcionalidad de lo cual integre este registro, la unidad de control crea una señal que vigila la ejecución de estas operaciones. <br><br>
+
+ De acuerdo con el tipo de operación que ingrese a la unidad de control, podría modificar la porción y el orden de los pasos secuenciales provocados para elegir y configurar las piezas de la CPU que se usarán para poder hacer el propósito de la operación, así sea desplazar, cambiar o guardar datos. <br><br>
+
+ Este proceso de decodificación de operaciones se vuelve a hacer al incrementarse el contador a la siguiente dirección guardada del programa. A partir de dicha dirección se ingresa la nueva operación a la unidad de control, y de esta forma sucesivamente hasta finalizar el programa.
+
+			
+			</p>
+		</div>
+	</div>
+</body>

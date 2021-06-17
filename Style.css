@@ -1,0 +1,258 @@
+/*
+	Style para manejar el estilo para el proyecto ArquitecturaCompus
+	Autor:Luis Gerardo Subealdea Hernandez
+	
+*/
+
+/*-------------------------------------------------*/
+/*	Este bloque contiene fondos				*/
+/*	Fecha de creacion: 15 Apr 2021			*/
+/*	Autor: Luis Gerardo Subealdea Hernandez	*/
+/*-------------------------------------------------*/
+body.general{
+	background-image:url("fondo.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:1370px 670px;
+}
+
+
+/*-------------------------------------------------*/
+/*	Este bloque contiene divs				*/
+/*	Fecha de creacion: 15 Apr 2021			*/
+/*	Autor: Luis Gerardo Subealdea Hernandez	*/
+/*-------------------------------------------------*/
+
+div.central{
+	width:1300px;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	
+}
+
+div.cuerpo{
+	background-color: #e5f1f7;
+	width: 60%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	float:inline-block;
+	border: 2px solid;
+	margin-left:auto;
+	margin-right:auto;
+	top:100%;
+	border-color:#1f1f2d;
+}
+
+div.barraEnlaces{
+	background-color:#1f1f2d;
+	width: 60%;
+	height:80px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	float:top;
+	border: 2px solid;
+	margin: auto;
+	border-color:#1f1f2d;
+}
+
+div.botonesNav{
+	width:600px;
+	
+}
+
+ul, il{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+.nav li a {
+	background-color:#1f1f2d;
+	color:white;
+	text-decoration:none;
+	display:block;
+	padding:10px 15px;
+	
+}
+
+.nav li a:hover{
+	background-color:#696996;
+	
+	
+}
+
+.nav>li {
+	float:left;	
+}
+
+.nav li ul{
+	display:none;
+	position:absolute;
+	min-width:100px;
+}
+
+.nav li:hover > ul{
+	display:block;
+	
+}
+
+.nav li ul li{
+	position:relative;	
+}
+
+.nav li ul li ul{
+	right:-158px;
+	top:0px;
+	
+}
+
+div.tituloPag{
+	width:80%;
+	height:50%;
+	border: 2px solid;
+	border-color:transparent;
+	margin:auto;
+	text-align:center;
+}
+
+
+
+div.columnas2{
+	
+	column-count:2;
+	column-gap:10px;
+	column-rule:none;
+}
+
+/*-------------------------------------------------*/
+/*	Este bloque contiene imagenes				*/
+/*	Fecha de creacion: 15 Apr 2021			*/
+/*	Autor: Luis Gerardo Subealdea Hernandez	*/
+/*-------------------------------------------------*/
+
+img.enigma{
+	content:url("ENIGMA.jpg");
+	width:210px;
+	margin-left:270px;
+	margin-bottom:18px;
+	margin-top:18px;
+}
+
+img.edsac{
+	content:url("EDSAC.jpg");
+	width:210px;
+	margin-left:270px;
+	margin-bottom:18px;
+	margin-top:18px;
+}
+
+img.colossus{
+	content:url("Colossus.jpg");
+	width:210px;
+	margin-left:270px;
+	margin-bottom:18px;
+	margin-top:18px;
+}
+
+img.univac{
+	content:url("UNIVAC.jpg");
+	width:210px;
+	margin-left:270px;
+	margin-bottom:18px;
+	margin-top:18px;
+}
+
+
+
+/*-------------------------------------------------*/
+/*	Este bloque contiene iframes				*/
+/*	Fecha de creacion: 15 Apr 2021			*/
+/*	Autor: Luis Gerardo Subealdea Hernandez	*/
+/*-------------------------------------------------*/
+iframe.trailer{
+	display:block;
+	margin-left:14%;
+	margin-bottom:10%;
+}
+
+/*-------------------------------------------------*/
+/*	Este bloque contiene botones de etiqueta "a"*/
+/*	Fecha de creacion: 15 Apr 2021			*/
+/*	Autor: Luis Gerardo Subealdea Hernandez	*/
+/*-------------------------------------------------*/
+a.botonInicio{
+	
+	border: 1px solid #121254; 
+	padding: 8px; 
+	background-color: #121254;
+	color: #ffffff; 
+	font-family: 'Helvetica', sans-serif;
+	display:inline-block;
+}
+
+a.botonElementos{
+	
+	padding: 8px; 
+	background-color: #121254; 
+	color: black;
+	font-family: 'Helvetica', sans-serif; 
+	display:inline-block;
+}
+
+a.bottonintern{
+	padding: 8px; 
+	background-color: #121254; 
+	color: #ffffff;
+	font-family: 'Helvetica', sans-serif; 
+	display:inline-block;
+	
+	
+}
+/*-------------------------------------------------*/
+/*	Este bloque contiene etiquetas p*/
+/*	Fecha de creacion: 15 Apr 2021			*/
+/*	Autor: Luis Gerardo Subealdea Hernandez	*/
+/*-------------------------------------------------*/
+p.titulos{
+	
+	font-family:'Helvetica';
+	font-size: 200%;
+	font-weight:bold;
+	margin:12px;
+}
+
+p.subtitulos{
+	
+	font-family:'Helvetica';
+	font-size: 150%;
+	font-weight:bold;
+	margin:20px;
+}
+
+p.texto{
+	
+	font-family:'Helvetica';
+	font-size: 100%;
+	margin:20px;
+}
+/*-------------------------------------------------*/
+/*	Este bloque contiene etiquetas font*/
+/*	Fecha de creacion: 15 Apr 2021			*/
+/*	Autor: Luis Gerardo Subealdea Hernandez	*/
+/*-------------------------------------------------*/
+font.tituloPag{
+	font-family:'Helvetica';
+	font-size: 200%;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+}
+
+.general{
+	font-family:'Helvetica';
+	font-size: 100%;
+	margin:20px;
+	
+}

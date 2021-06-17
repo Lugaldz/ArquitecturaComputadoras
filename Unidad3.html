@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<!--pagina html "Inicio" del proyecto ArquitecturaCompus
+Autor: Luis Gerardo Subealdea Hernandez-->
+<head>
+	<title>Unidad 3</title>
+	<link rel ="stylesheet" type="text/css" href = "Style.css">
+	<link rel="shortcut icon" href="icon.png">
+</head>
+<body class=general>
+
+	<!--Div general de la pagina-->
+	<div class="central">
+		<!--Barra de enlaces-->
+		<div class="barraEnlaces">
+			<!--Seccion del titulo-->
+			<div class=tituloPag>
+				<font class="tituloPag">Arquitectura de Computadoras</font>
+			</div>
+			<!--Seccion de botones-->
+			<div class=barraEnlaces>
+			<div class=botonesNav>
+				<nav>
+				<ul class=nav>	
+				<li>
+				<a class="botonElementos" href="index.html">Unidad 1</a>
+						<ul>
+							<li>
+								<a class="botonElementos" href="index.html">Inicio</a>
+							</li>
+							<li>						
+								<a class="botonElementos" href="Arquitecturas.html">Arquitecturas</a>
+							</li>
+							<li>	
+								<a class="botonElementos" href="Componentes.html">Componentes</a>
+								
+									<ul>
+										<li>
+											<a class="bottonintern" href="Procesadores.html">Procesadores</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Alu.html">Alu</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Buses.html">Buses</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="UC.html">Unidad de Control</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Memorias.html">Memorias</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Modulos.html">Modulos E/S</a>
+										</li>
+									</ul>
+								
+							</li>
+							<li>	
+								<a class="botonElementos" href="Gamas.html">Gamas</a>
+							</li>	
+							<li>
+								<a class="botonElementos" href="Videos.html">Trabajos y Recursos</a>
+							</li>
+						</ul>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad2.html">Unidad 2</a>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad3.html">Unidad 3</a>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad4.html">Unidad 4</a>
+						</li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+		<!--Parte del cuerpo-->
+		<div class="cuerpo">
+		
+					<p class="titulos">Unidad 3</p>
+			<p class="subtitulos">Chip set</p>
+			<p class="texto">
+			El chipset es el conjunto de circuitos que están en el procesador de cualquier computadora, este hace posible que la placa base funcione como eje central del sistema. Ya que da soporte a muchos de los componentes además de conectarlos de forma que se logran comunicar entre ellos. <br><br>
+El chipset es un elemento infaltable en cualquier placa base y es parte importantísima de esta, sin embargo, esto no quiere decir que tener un buen chipset convierte a la placa madre en una buena así de simple. 
+
+			</p>
+			
+			<p class="subtitulos" style="font-size:1.1rem"> Unidad Central de Procesamiento (CPU)</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Controlador del bus</p>
+			<p class="texto">Controlador de bus es un controlador de tráfico, el procesador necesita de este chip para generar el juego completo de señales del bus de control. <br><br>
+El bus es la vía a través de la que se van a transmitir y recibir todas las comunicaciones, tanto internas como externas. Se le considera un dispositivo de transferencia de información entre los componentes conectados al mismo.
+</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Puertas de entrada salida</p>
+			<p class="texto">Los puertos de entrada salida son los que hacen posible la comunicación entre el software y el hardware, estos autorizan el acceso a los diferentes registros del hardware. Para comunicarse con los puertos, el procesador utiliza el bus de daros y el bus de directores. <br><br>
+
+			En primer lugar, ésta manda una señal mediante una conexión especial de bus, para que todas las unidades que estén recibiendo el bus sepan que ahora no se va a dirigir a un punto de memoria sino a un puerto. <br><br>
+			Seguidamente coloca la dirección del puerto en los 16 bits inferiores del bus de direcciones y espera que uno de los “escuchas” del bus declare su competencia. Una vez esto ha sucedido, la CPU manda los datos que deben transmitirse por medio del bus de datos. <br><br>En dirección contraria , el puerto actuará de la misma forma al leer los datos, el único requisito es que el contenido del puerto lo mande la tarjeta de ampliación a la CPU. Pero sólo mandará los datos en caso de que le sea requerido y no cuando la tarjeta crea que tiene algo importante para mandar.
+			</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Controlador de interrupciones</p>
+			<p class="texto">Las interrupciones de la computadora, son manejadas por un chip conocido como PIC ("Programmable Interrupt Controller").<br><br>
+En las primeras computadoras era un 8259A, que puede manejar 8 peticiones de interrupción, pero pronto se hizo evidente que eran un número excesivamente corto, por lo que, en 1984, IBM añadió un segundo controlador en el modelo AT. Este diseño, con dos controladores, ha permanecido invariable hasta nuestros días en lo que se refiere a su funcionalidad. Recientemente ha sido sustituido por el denominado APIC ("Advanced Programmable Interrupt Controller") en las máquinas Pentium y sucesoras, que está basado en un chip 82489DX.
+</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Controlador de acceso directo a memoria </p>
+			<p class="texto">El controlador de acceso directo a memoria permite a ciertos componentes acceder a la memoria del sistema, ya sea para modificar o leer datos, actuando independientemente del procesador. La mayoría de sistemas de hardware utilizan este controlador, incluyendo controladores de disco, tarjetas gráficas de sonido. <br><br>Una transferencia DMA consiste principalmente en copiar un bloque de memoria de un dispositivo a otro. En lugar de que la CPU inicie la transferencia, la transferencia se lleva a cabo por el controlador DMA. Un ejemplo típico es mover un bloque de memoria desde una memoria externa a una interna más rápida. Tal operación no ocupa al procesador y, por ende, éste puede efectuar otras tareas. Las transferencias DMA son esenciales para aumentar el rendimiento de aplicaciones que requieran muchos recursos.</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Circuitos de temporización</p>
+			<p class="texto">
+			Al ser las computadoras maquinas asíncronas, todas van con cierto ritmo por decirlo de cierta forma, el ritmo que siguen es el del llamado reloj o metrónomo, que genera una señal de reloj que es capaz de ejecutar el sistema, esta señal toma presencia en el bus de control. <br><br>
+
+					El reloj funciona gracias a un oscilador controlado por un cristal de cuarzo que funciona como patrón, originalmente esta frecuencia es de 14.31818MHz. Sin esta señal sería imposible el funcionamiento de muchos de los elementos de las computadoras, entre estos el procesador. 
+
+			</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Circuitos de control</p>
+			<p class="texto">
+			Un circuito de control es un componente sumamente importante en cualquier sistema industrial. Como circuito de control se entienden tanto componentes físicos y funciones de control necesarios para ajustar automáticamente el valor de una variable de proceso medida usada para igualar el valor de un cierto punto de ajuste. 
+			</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Controladores de video</p>
+			<p class="texto">Por controlador de video se entiende un circuito integrado que es el principal responsable de la generación de señal de video. También llamados VDC, siempre son el principal componente de la señal de videogenerador de la lógica, pero a veces también hay otros chips utilizados en estos procesos, como lo son la memoria RAM para celebrar el pixel de datos.</p>
+			
+			<p class="subtitulos">Apliaciones</p>
+			<p class="subtitulos" style="font-size:1rem">Entrada/salida</p>
+			<p class="texto">Los controladores de entrada y salida son una clase de circuitos integrados parte del chipset que combinan interfaces para una variedad de dispositivos que poseen bajo ancho de banda.<br><br>
+				La mayoría de estos chips son compuestos por: sensores de temperaturas, detección de intrusión del chasis, controlador de ventilador, controlador de puerto infrarrojo, un watchdog, puerto MIDI, entre otros.
+				</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Almacenamiento</p>
+			<p class="texto">Los dispositivos de almacenamiento de datos son componentes electrónicos diseñados para leer o grabar datos en el soporte de almacenamiento de datos, ya sea de forma temporal o permanente. Estos dispositivos realizan operaciones de alfabetización física y lógica de los medios donde se almacenan los archivos de un sistema informático.</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Fuentes de alimentación</p>
+			<p class="texto">Las fuentes de alimentación son componentes fundamentales para el funcionamiento de cualquier equipo electrónico, estas son dispositivos que se encargan de proporcionar el corriente necesario para el equipo. <br><br>
+
+				En los ordenadores de sobremesa, la fuente de alimentación se encuentra generalmente en la parte inferior de la torre y existen del tipo modulares y semi modulares. La diferencia entre estos dos tipos es que el cable 24pin de la fuente semi modular no es removible.
+				</p>
+			
+			
+			<p class="subtitulos">Ambientes de servicio</p>
+			<p class="subtitulos" style="font-size:1rem">Negocios</p>
+			<p class="texto">Gracias al desarrollo de las tecnologías ha influido en la transformación del trabajo de las organizaciones, tanto los bienes de capital, como los programas y sistemas de información y comunicación, han incrementado la productividad y eficiencia de las organizaciones; ejemplos pueden ser: las bases de datos, sistemas de registro, sistemas de contabilidad, archivos que almacenan información importante, sistemas de conmutación electrónica, entre muchos otros.</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Industria</p>
+			<p class="texto">La industrialización de los servicios de tecnología de información va a redefinir el mercado en términos de como las empresas evalúan, compran y seleccionan los servicios y como los vendedores desarrollan y establecen costos de los servicios. Para poder hacer esta estandarización, es necesario un enfoque hacia las resoluciones genéricas y esto debería ser responsabilidad de los proveedores, que tienen que desarrollar, operar y regir el resultado de dichos genéricos de TI.  Aun cuando los servicios de TI permanecen en proceso de madurez, la madurez de la industria se ha aumentado en puntos evidentes, como la manera en que los servicios son implementados y administrados.</p>
+			
+			<p class="subtitulos" style="font-size:1rem">Comercio electrónico</p>
+			<p class="texto">El comercio electrónico, también llamado e-commerce, es la actividad económica que permite el comercio de servicios y productos haciendo uso de los medios digitales, como lo pueden ser páginas web, aplicaciones móviles y redes sociales. <br><br>
+
+			El e-commerce posibilita a los clientes usar una red virtual para visualizar los catálogos de las tiendas, así como conseguir detalles del producto, reseñas de otros usuarios, entre muchas otras características útiles.
+				</p>
+		
+		
+
+			
+			
+		
+		</div>
+	</div>
+</body>
+</html>

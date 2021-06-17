@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<!--pagina html "Inicio" del proyecto ArquitecturaCompus
+Autor: Luis Gerardo Subealdea Hernandez-->
+<head>
+	<title>Arquitecturas</title>
+	<link rel ="stylesheet" type="text/css" href = "Style.css">
+	<link rel="shortcut icon" href="icon.png">
+</head>
+<body class=general>
+
+	<!--Div general de la pagina-->
+	<div class="central">
+		<!--Barra de enlaces-->
+		<div class="barraEnlaces">
+			<!--Seccion del titulo-->
+			<div class=tituloPag>
+				<font class="tituloPag">Arquitectura de Computadoras</font>
+			</div>
+			<!--Seccion de botones-->
+			<div class=barraEnlaces>
+			<div class=botonesNav>
+				<nav>
+				<ul class=nav>	
+				<li>
+				<a class="botonElementos" href="index.html">Unidad 1</a>
+						<ul>
+							<li>
+								<a class="botonElementos" href="index.html">Inicio</a>
+							</li>
+							<li>						
+								<a class="botonElementos" href="Arquitecturas.html">Arquitecturas</a>
+							</li>
+							<li>	
+								<a class="botonElementos" href="Componentes.html">Componentes</a>
+								
+									<ul>
+										<li>
+											<a class="bottonintern" href="Procesadores.html">Procesadores</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Alu.html">Alu</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Buses.html">Buses</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="UC.html">Unidad de Control</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Memorias.html">Memorias</a>
+										</li>
+										<li>
+											<a class="bottonintern" href="Modulos.html">Modulos E/S</a>
+										</li>
+									</ul>
+								
+							</li>
+							<li>	
+								<a class="botonElementos" href="Gamas.html">Gamas</a>
+							</li>	
+							<li>
+								<a class="botonElementos" href="Videos.html">Trabajos y Recursos</a>
+							</li>
+						</ul>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad2.html">Unidad 2</a>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad3.html">Unidad 3</a>
+						</li>
+						<li>
+							<a class="bottonintern" href="Unidad4.html">Unidad 4</a>
+						</li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+		</div>
+		<!--Parte del cuerpo-->
+		<div class="cuerpo">
+		
+			<p class="titulos">Arquitecturas de computadoras</p>
+			
+			<p class="subtitulos">Arquitecturas Clásicas</p>
+			<p class="texto">Las arquitecturas clasicas fueron desarrolladas con las primeras computadoras
+			electromecanicas y de tubos de vacío.<br>
+			A contitnuación se mostrarán dos arquitecturas relacionadas con el uso de la memoria: la arquitectura 
+			de Jonh Von Neumman y la Harvard
+			</p>
+			
+			<p class="subtitulos" style="font-size:1.2rem">Modelo Von Neumann</p>
+			
+			<p class="texto">
+			Convencionalmente los sistemas con microprocesadores se fundamentan en esta arquitectura, en la cual la unidad central de proceso (CPU), está conectada a una memoria primaria exclusiva (casi constantemente solamente RAM) donde se tienen las normas del programa y los datos. A esa memoria se accede por medio de un sistema interconexión de buses exclusivo  (control, direcciones y datos).<br><br>
+			En un sistema con arquitectura Von Neumann la medida de la unidad de datos o indicaciones está fijada por el ancho del bus que comunica la memoria con la CPU. De esta forma un microprocesador de 8 bits con un bus de 8 bits, deberá manejar datos e indicaciones de una o más unidades de 8 bits (bytes) de longitud. <br><br>
+			Si tiene que entrar a una instrucción o dato de bastante más de un byte de longitud, deberá hacer bastante más de una entrada a la memoria. <br><br>
+			El tener un exclusivo bus provoca que el microprocesador sea más retardado en su contestación, debido a que no puede buscar en memoria una totalmente nueva instrucción a medida que no finalicen las transferencias de datos de la instrucción anterior Las computadoras digitales convencionales presentan un aspecto Von Neumann. <br><br>
+			Este modelo consta de cinco componentes principales. 
+			</p>
+				<ul class="general">
+					<li>Unidad de Memoria.</li>
+					<li>Unidad de Entrada/Salida.</li>
+					<li>Unidad de Control. Incluidos CPU.</li>
+					<li>Unidad Aritmética Lógica. Incluida en CPU.</li>
+					<li>Registros de Programas. Incluidos en CPU.</li>
+				</ul>
+			<p class="texto">	 
+			Las instrucciones provenientes del sistema de entrada, son almacenados por la memoria, procesados por la ALU bajo la dirección de la unidad de control. Los resultados obtenidos son enviados a la unidad de salida. 
+			El programa almacenado es lo más importante en el modelo.  Los programas se almacenan en la memoria del equipo junto con los datos a procesar. 
+			En las computadoras de programa almacenado, el programa puede manipularse como si se tratara de datos. Este concepto da origen a los compiladores, sistemas operativos y es la base de la gran versatilidad de las computadoras modernas. 
+			<br><br>
+			Limitaciones Von Neumann<br><br> 
+			La longitud de las instrucciones por el bus de datos, que hace que el microprocesador tenga que realizar varios accesos a memoria para buscar instrucciones complejas.
+			La velocidad de operación a causa del bus único para datos e instrucciones que no deja acceder simultáneamente a unos y otras, lo cual impide superponer ambos tiempos de acceso. 
+			</p>
+			
+			<img src="von.jpg" width="550px" style="display:block; margin:auto">
+			
+			<p class="subtitulos" style="font-size:1.2rem">Modelo Harvard</p>
+			<p class="texto">
+			Esta arquitectura usa los Micro controladores, tiene la unidad central de proceso (CPU) conectada a 2 memorias  (una con las indicaciones y otra con los datos) mediante 2 buses diferentes.<br><br>
+			Una de las memorias tiene sólo las normas del programa (Memoria de Programa), y la otra solamente almacena datos (Memoria de Datos).<br><br> 
+			Los dos buses son plenamente independientes lo cual posibilita que la CPU logre entrar de manera sin dependencia y simultánea a la memoria de datos y a la de normas. Como los buses son independientes dichos tienen la posibilidad de tener diversos contenidos en la misma dirección y además distinta longitud. Además, la longitud de los datos y las normas podría ser distinta, lo cual optimiza la utilización de la memoria generalmente.<br><br>
+			Para un procesador de Set de Normas Limitado, o RISC (Reduced Instrucción Set Computer), el set de indicaciones y el bus de memoria de programa tienen la posibilidad de diseñarse de tal forma que cada una de las indicaciones tengan una sola postura de memoria de programa de longitud. <br><br>
+			Al ser los buses independientes, el CPU puede entrar a los datos para terminar la ejecución de una instrucción, y paralelamente leer la siguiente instrucción a realizar. <br><br>
+			La magnitud de las normas no está referente con el de los datos, y por consiguiente podría ser optimizado para que cualquier instrucción requiera una sola postura de memoria de programa, pudiendo de esta forma más grande rapidez y menor longitud de programa. <br><br>
+			El tiempo de ingreso a las indicaciones puede superponerse con el de los datos, pudiendo una más grande rapidez en cada operación. <br><br>
+			La primordial desventaja de esta arquitectura; el bus de datos y direcciones exclusivo se convierte en un cuello de botella por el que debería pasar toda la información que se lee de o se redacta a la memoria, obligando a que todos los accesos a esta sean secuenciales.  Limita el nivel de paralelismo (acciones que tienen la posibilidad de hacer al mismo tiempo) y, por consiguiente, el manejo del computador.<br><br>
+			</p>
+						<img src="harvard.png" width="550px" style="display:block; margin:auto">
+
+			<p class="subtitulos">Arquitectura segmentada</p>
+			 
+			<p class="texto">
+				Es una de las tecnologías utilizadas para realizar la segmentación o paralelismo. Divide el procesador, en etapas,  procesa una instrucción diferente en cada una y trabaja con varias a la vez.  Pueden trabajar de forma paralela, en diferentes instrucciones, utilizando una cola de instrucciones para su comunicación, denominado entubamiento.<br><br> 
+				La segmentación de cauce (pipelining) es una forma efectiva de organizar el hardware del CPU para realizar más de una operación al mismo tiempo. Consiste en descomponer el proceso de ejecución de las instrucciones en fases o etapas que permitan una ejecución simultánea. <br><br> 
+				Cada uno de estos pasos se define como etapa de la segmentación o segmento.  <br><br> 
+				Las etapas están conectadas, cada una a la siguiente, para formar una especie de cauce las instrucciones se entran por un extremo, son procesadas a través de las etapas y salen por el otro. La productividad de la segmentación está determinada por la frecuencia con que una instrucción salga del cauce.  <br><br> 
+				La duración de un ciclo máquina está determinada por el tiempo que necesita la etapa más lenta (porque todas las etapas progresan a la vez).  <br><br> 
+				Tipos de cauces: 
+				<ul class="general"> 
+					<li>Unifuncion: ejecutan un único proceso.</li>
+					<li>Multifunción: pueden ejecutar varios procesos.</li>
+					<li>Estáticos: en un instante determinado sólo pueden ejecutar uno. </li>
+					<li>Dinámicos: pueden ejecutar simultáneamente varios procesos. </li>
+					<li>Lineal: a cada etapa sólo le puede seguir otra etapa concreta. </li>
+					<li>No lineal: se pueden establecer recorridos complejos de las etapas. </li>
+				</ul>
+</p>
+
+		</div>
+	</div>
+</body>
