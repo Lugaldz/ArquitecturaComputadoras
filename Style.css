@@ -12,7 +12,6 @@
 body.general{
 	background-image:url("fondo.jpg");
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-size:1370px 670px;
 }
 
